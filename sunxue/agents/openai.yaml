@@ -1,0 +1,4 @@
+interface:
+  display_name: "孙学"
+  short_description: "以公开材料拆解机会、利益、规则与传播，给出有反证和退路的行动方案"
+  default_prompt: "使用 $sunxue 分析我的问题，给出明确判断、关键依据、可行路径、失败条件和下一步行动。"

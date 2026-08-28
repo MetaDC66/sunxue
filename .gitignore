@@ -1,0 +1,11 @@
+# Keep source material and local working data out of the public repository.
+.env
+.env.*
+*.pdf
+*.log
+__pycache__/
+.venv/
+work/
+outputs/
+.DS_Store
+Thumbs.db
