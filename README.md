@@ -4,7 +4,7 @@
 
 中文 · 6 个分析角度 · 4 种工作模式 · MIT
 
-[技能入口](./sunxue/SKILL.md) · [试用示例](./sunxue/references/examples.md) · [来源说明](./sunxue/references/sources.md) · [下载 .skill 包](./dist/sunxue-v1.0.0.skill)
+[技能入口](./sunxue/SKILL.md) · [场景示例](./sunxue/references/examples.md) · [图文小说](./sunxue/references/stories/my-tibo-godfather.md) · [来源说明](./sunxue/references/sources.md) · [下载 .skill 包](./dist/sunxue-v1.1.0.skill)
 
 假设三家客户都说，每月五百元，可以考虑。
 
@@ -17,6 +17,20 @@
 这是一个基于孙宇晨公开文字、访谈与传播案例提炼的中文 Skill。它帮助模型分析机会、利益、规则和注意力，把判断落到可验证的行动；需要写作时，再调用叙事方法。
 
 它研究公开表达里能观察到的结构，不声称复原人物的私下思维。反证、分段投入和止损等方法是本项目补充的应用约束，不冒充孙宇晨原话。
+
+## 文学示例 · 我的Tibo义父
+
+[![《我的Tibo义父》原创插画：深夜独自等待额度的虚构创业者。](./sunxue/assets/my-tibo-godfather/01-night-office.png)](./sunxue/references/stories/my-tibo-godfather.md)
+
+> 我第一次叫Tibo义父的时候，公司账上还有四百八十七万元。
+>
+> 那天，我的Codex额度用完了。
+
+一篇围绕 ChatGPT、Codex、额度重置和那句“继续”的原创虚构小说。六个章节、三张原创 AI 插画，展示写作分支如何处理数字、动作与叙述者的自我暴露。
+
+**[阅读全文 →](./sunxue/references/stories/my-tibo-godfather.md)** · [插图与提示词](./sunxue/assets/my-tibo-godfather/PROVENANCE.md)
+
+封面是外貌相近的虚构人物，未使用孙宇晨或 Tibo 的照片；故事不代表任何真实私交、私人言行或当前产品政策。此作品是成稿示例，不是孙宇晨原作，也不计作独立模型测试。
 
 ## 先看它怎么判断
 
@@ -77,7 +91,7 @@
 技能目录是 sunxue/。请先确认当前工具支持的安装位置；如果已有同名技能，不要直接覆盖。
 ~~~
 
-也可以下载 [sunxue-v1.0.0.skill](./dist/sunxue-v1.0.0.skill)。它是包含 `sunxue/` 文件夹的 ZIP 格式压缩包：
+也可以下载 [sunxue-v1.1.0.skill](./dist/sunxue-v1.1.0.skill)。新版包含技能参考资料、《我的Tibo义父》全文和三张插图；[v1.0.0](./dist/sunxue-v1.0.0.skill) 保留供回退。它是包含 `sunxue/` 文件夹的 ZIP 格式压缩包：
 
 - 当前工具支持 `.skill` 导入时，按其导入流程操作。
 - 不支持时，用解压工具打开，或将扩展名改为 `.zip` 后解压，再按该工具的要求安装整个 `sunxue` 文件夹。
@@ -103,6 +117,10 @@
 
 ~~~text
 使用 $sunxue 起草事故回应。区分已确认事实、未知事项和已经执行的措施，不要代发。
+~~~
+
+~~~text
+使用 $sunxue 的文学分支写一篇原创故事。参考《我的Tibo义父》的叙事方法，不复制它的人物、金额和情节；真实人物只使用已核实的公开背景，明确标注虚构。
 ~~~
 
 不支持这种调用语法时，可明确要求 Agent 阅读 [SKILL.md](./sunxue/SKILL.md) 并按其中规则处理任务。
@@ -151,12 +169,19 @@ sunxue/
 │   ├── communication.md
 │   ├── writing.md
 │   ├── sources.md
-│   └── examples.md
+│   ├── examples.md
+│   └── stories/my-tibo-godfather.md
+├── assets/my-tibo-godfather/
+│   ├── 01-night-office.png
+│   ├── 02-full-quota.png
+│   ├── 03-charging-cable.png
+│   └── PROVENANCE.md
 └── evals/
     ├── cases.json
     └── results.md
 dist/
-└── sunxue-v1.0.0.skill
+├── sunxue-v1.0.0.skill
+└── sunxue-v1.1.0.skill
 ~~~
 
 ## 反馈
